@@ -1,0 +1,95 @@
+@font-face {
+  src: url('assets/fonts/static/Inter-Bold.ttf') format(truetype);
+  font-family: inter-bold;
+  font-size: 16px;
+}
+
+@font-face {
+  src: url('assets/fonts/static/Inter-Regular.ttf');
+  font-family: inter-regular;
+  font-size: 16px;
+}
+
+@font-face {
+  src: url('assets/fonts/static/Inter-SemiBold.ttf');
+  font-family: semi-bold;
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    /* COLORES*/
+    /* Primario */
+    --Verde: hsl(75, 94%, 57%);
+    /*Neutro*/
+    --Blanco: hsl(0, 0%, 100%);
+    --Gris: hsl(0, 0%, 20%);
+    --Gris-oscuro: hsl(0, 0%, 12%);
+    --Negro-apagado: hsl(0, 0%, 8%);
+    background-color: var(--Negro-apagado);
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+    font-family: inter-bold;
+}
+
+.card {
+  max-width: 380px;
+  border-radius: 1rem;
+  background-color: var(--Gris-oscuro);
+}
+.container__profile {
+  max-width: 30%;
+  margin: 2rem auto;
+}
+
+.container__profile img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.container__info {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.container__info h2 {
+  font-size: 2em;
+  font-family: semi-bold;
+  color: var(--Blanco);
+  margin-bottom: .5em;
+}
+
+.container__info p {
+  color: var(--Verde);
+}
+
+.container__buttons {
+  width: 90%;
+  margin: auto;
+  font-family: inter-regular;
+  text-align: center;
+  color: var(--Blanco);
+}
+
+.container__buttons a {
+  display: block;
+  font-family: inter-bold;
+  text-align: center;
+  text-decoration: none;
+  padding: .8em;
+  border-radius: .5em;
+  margin: 1em;
+  color: var(--Blanco);
+  background-color: var(--Gris);
+}
+
+.container__buttons a:hover {
+  color: var(--Negro-apagado);
+  background-color: var(--Verde);
+}
